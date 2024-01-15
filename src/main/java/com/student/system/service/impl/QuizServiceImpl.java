@@ -28,7 +28,10 @@ public class QuizServiceImpl implements QuizService {
                         .formatted(quizDto.getCourseId())));
         Quiz quiz = mapper.map(quizDto, Quiz.class);
         course.setQuizzes(Set.of(quiz));
+        System.out.println(Set.of(quiz));
+        System.out.println(course);
         return quizRepository.save(quiz);
+        // TODO: debug why it updates on the exist in quiz_course table and not creating a new record
     }
     @Override
     public Quiz findQuiz(Long quizId) {
