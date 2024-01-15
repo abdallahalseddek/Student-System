@@ -1,0 +1,167 @@
+-- Insert Students
+INSERT INTO Student (first_name, last_name, email, date_of_birth, enrollment_date)
+VALUES ('John', 'Doe', 'john.doe@example.com', '1990-01-01', '2022-01-15'),
+       ('Abdo', 'Ahmed', 'abdo.ahmed@example.com', '1998-08-01', '2024-01-12'),
+       ('Alice', 'Johnson', 'alice.johnson@example.com', '1995-03-22', '2023-02-28'),
+       ('Bob', 'Smith', 'bob.smith@example.com', '1993-11-10', '2021-07-05'),
+       ('Eva', 'Brown', 'eva.brown@example.com', '1997-04-18', '2022-09-30'),
+       ('Chris', 'Miller', 'chris.miller@example.com', '1994-06-05', '2023-05-20'),
+       ('Sara', 'Clark', 'sara.clark@example.com', '1999-09-15', '2022-04-17'),
+       ('Mike', 'Taylor', 'mike.taylor@example.com', '1991-12-28', '2021-12-01'),
+       ('Sophia', 'Martinez', 'sophia.martinez@example.com', '1996-02-14', '2023-11-12'),
+       ('Alex', 'Wilson', 'alex.wilson@example.com', '1992-07-08', '2022-11-30');
+-- Insert Teachers
+INSERT INTO Teacher (first_name, last_name, email, date_of_birth, hire_date)
+VALUES ('Jane', 'Smith', 'jane.smith@example.com', '1985-05-15', '2020-02-10'),
+       ('Mohamed', 'Ahmed', 'moh.ah@example.com', '1955-10-15', '2022-02-10'),
+       ('Emily', 'Davis', 'emily.davis@example.com', '1978-03-27', '2019-08-20'),
+       ('Robert', 'Johnson', 'robert.johnson@example.com', '1982-12-10', '2021-05-05'),
+       ('Laura', 'Wilson', 'laura.wilson@example.com', '1990-08-22', '2018-11-30');
+
+-- Insert Quizzes
+INSERT INTO Quiz (title, description, questions, duration)
+VALUES ('Math Quiz', 'Test your math skills', 'Question 1, Question 2', 30),
+       ('Science Quiz', 'Test your Science skills', 'Question 1, Question 2', 15),
+       ('History Quiz', 'Explore historical knowledge', 'Question 1, Question 2', 20),
+       ('Literature Quiz', 'Test your literary knowledge', 'Question 1, Question 2', 25),
+       ('Programming Quiz', 'Challenge your coding skills', 'Question 1, Question 2', 40),
+       ('Geography Quiz', 'Explore world geography', 'Question 1, Question 2', 18),
+       ('Art Quiz', 'Test your artistic knowledge', 'Question 1, Question 2', 22),
+       ('Music Quiz', 'Test your musical knowledge', 'Question 1, Question 2', 15),
+       ('Sports Quiz', 'Challenge your sports knowledge', 'Question 1, Question 2', 30),
+       ('General Knowledge Quiz', 'Test your overall knowledge', 'Question 1, Question 2', 20),
+       ('Technology Quiz', 'Explore the world of technology', 'Question 1, Question 2', 25),
+       ('Health Quiz', 'Test your health and wellness knowledge', 'Question 1, Question 2', 18),
+       ('Language Quiz', 'Challenge your linguistic skills', 'Question 1, Question 2', 20),
+       ('Environmental Quiz', 'Test your environmental awareness', 'Question 1, Question 2', 15),
+       ('Philosophy Quiz', 'Explore philosophical concepts', 'Question 1, Question 2', 22),
+       ('Economics Quiz', 'Test your economic knowledge', 'Question 1, Question 2', 25),
+       ('Psychology Quiz', 'Explore the human mind', 'Question 1, Question 2', 18),
+       ('Culinary Quiz', 'Test your culinary expertise', 'Question 1, Question 2', 30),
+       ('Fashion Quiz', 'Explore the world of fashion', 'Question 1, Question 2', 15),
+       ('Film Quiz', 'Test your knowledge of films', 'Question 1, Question 2', 25);
+
+-- Insert Courses
+INSERT INTO Course (title, description, start_date, end_date)
+VALUES ('Math 101', 'Introduction to Mathematics', '2022-02-01', '2022-06-01'),
+       ('Java 101', 'Introduction to Java', '2023-02-01', '2024-05-01'),
+       ('Physics 101', 'Fundamentals of Physics', '2022-03-15', '2022-07-15'),
+       ('History 101', 'Introduction to World History', '2023-01-10', '2023-05-10'),
+       ('English Literature', 'Exploring Literary Classics', '2022-09-01', '2023-01-15'),
+       ('Computer Science Fundamentals', 'Basics of Computer Science', '2023-03-01', '2023-06-30'),
+       ('Chemistry Basics', 'Introduction to Chemistry', '2022-04-05', '2022-08-05'),
+       ('Art Appreciation', 'Understanding Visual Arts', '2023-05-20', '2023-09-20'),
+       ('Music Theory', 'Fundamentals of Music', '2022-08-10', '2023-01-05'),
+       ('Physical Education', 'Promoting Health and Fitness', '2023-03-15', '2023-07-15'),
+       ('Data Structures and Algorithms', 'Advanced Programming Concepts', '2022-01-01', '2022-06-30'),
+       ('Psychology 101', 'Introduction to Psychology', '2023-02-15', '2023-06-15'),
+       ('Business Ethics', 'Ethical Decision Making in Business', '2022-07-01', '2022-11-30'),
+       ('Environmental Science', 'Understanding the Environment', '2023-04-01', '2023-08-01'),
+       ('Marketing Fundamentals', 'Essentials of Marketing', '2022-05-15', '2022-09-15'),
+       ('Spanish Language Basics', 'Introduction to Spanish', '2023-01-01', '2023-05-01'),
+       ('Microeconomics', 'Principles of Microeconomics', '2022-11-10', '2023-03-10'),
+       ('Sociology', 'Exploring Societal Structures', '2023-06-01', '2023-10-01'),
+       ('Linear Algebra', 'Fundamentals of Linear Algebra', '2022-08-15', '2023-01-15'),
+       ('Philosophy 101', 'Introduction to Philosophy', '2022-02-20', '2022-07-20'),
+       ('Robotics Engineering', 'Introduction to Robotics', '2023-03-01', '2023-08-31'),
+       ('Organic Chemistry', 'Understanding Organic Compounds', '2022-10-05', '2023-02-05'),
+       ('Political Science', 'Essentials of Political Science', '2023-07-15', '2023-11-15'),
+       ('Human Anatomy', 'Study of Human Body Structure', '2022-12-01', '2023-04-01'),
+       ('French Language Basics', 'Introduction to French', '2023-04-15', '2023-08-15'),
+       ('Macroeconomics', 'Principles of Macroeconomics', '2022-09-20', '2023-01-20'),
+       ('Cognitive Psychology', 'Understanding Cognitive Processes', '2023-03-10', '2023-07-10'),
+       ('Business Finance', 'Essentials of Business Finance', '2022-11-05', '2023-03-05'),
+       ('World Geography', 'Exploring Global Geographical Features', '2023-05-01', '2023-09-01'),
+       ('Digital Marketing', 'Essentials of Digital Marketing', '2022-06-15', '2022-11-15'),
+       ('Artificial Intelligence', 'Introduction to AI Concepts', '2023-01-10', '2023-06-10'),
+       ('Statistics Basics', 'Introduction to Statistical Analysis', '2022-07-25', '2022-11-25'),
+       ('Introduction to Philosophy', 'Exploring Philosophical Ideas', '2023-02-01', '2023-06-01'),
+       ('Human Resource Management', 'Essentials of HRM', '2022-12-15', '2023-05-15'),
+       ('Cell Biology', 'Study of Cell Structure and Function', '2023-07-01', '2023-11-01'),
+       ('Digital Photography', 'Basics of Digital Photography', '2022-08-20', '2023-01-20'),
+       ('International Relations', 'Understanding Global Politics', '2023-03-15', '2023-07-15'),
+       ('Social Media Marketing', 'Essentials of Social Media Marketing', '2022-10-10', '2023-02-10'),
+       ('Medical Ethics', 'Ethical Considerations in Medicine', '2023-05-05', '2023-09-05'),
+       ('Introduction to Linguistics', 'Exploring Language Structure', '2022-09-15', '2023-01-15'),
+       ('Introduction to Astronomy', 'Exploring the Universe', '2023-02-20', '2023-07-20'),
+       ('Entrepreneurship', 'Essentials of Entrepreneurial Skills', '2022-12-01', '2023-04-01'),
+       ('Introduction to Ethics', 'Understanding Moral Philosophy', '2023-07-15', '2023-11-15'),
+       ('Digital Design', 'Basics of Digital Design', '2022-06-01', '2022-10-01'),
+       ('Introduction to Anthropology', 'Study of Human Societies', '2023-01-10', '2023-05-10'),
+       ('Public Speaking', 'Effective Communication Skills', '2022-08-15', '2022-12-15');
+
+-- Link Students to Courses
+INSERT INTO student_course (student_id, course_id)
+VALUES (1, 1),
+       (1, 20),
+       (2, 1),
+       (3, 2),
+       (4, 2),
+       (5, 3),
+       (6, 3),
+       (7, 4),
+       (8, 4),
+       (9, 5),
+       (2, 5),
+       (8, 6),
+       (7, 6),
+       (7, 7),
+       (8, 7),
+       (9, 25),
+       (4, 42),
+       (3, 9),
+       (5, 9),
+       (5, 10),
+       (1, 10);
+
+-- Link Teachers to Courses
+INSERT INTO teacher_course (teacher_id, course_id)
+VALUES (1, 1),
+       (2, 2),
+       (3, 3),
+       (4, 4),
+       (5, 5),
+       (1, 6),
+       (2, 7),
+       (3, 8),
+       (4, 9),
+       (5, 10),
+       (1, 11),
+       (2, 12),
+       (3, 13),
+       (4, 14),
+       (5, 15),
+       (1, 16),
+       (1, 17),
+       (2, 18),
+       (3, 19),
+       (4, 20);
+
+-- Link Quizzes to Courses
+INSERT INTO quiz_course (quiz_id, course_id)
+VALUES (1, 1),
+       (2, 2),
+       (3, 3),
+       (4, 4),
+       (5, 5),
+       (6, 6),
+       (7, 7),
+       (8, 8),
+       (9, 9),
+       (10, 10),
+       (11, 11),
+       (12, 12),
+       (13, 13),
+       (14, 14),
+       (15, 15),
+       (16, 16),
+       (17, 17),
+       (18, 18),
+       (19, 19),
+       (20, 20);
+
+-- get all teacher courses
+SELECT course.course_id, course.title, course.description, course.start_date, course.end_date
+FROM course
+         JOIN teacher_course ON course.course_id = teacher_course.course_id
+WHERE teacher_course.teacher_id = 1;

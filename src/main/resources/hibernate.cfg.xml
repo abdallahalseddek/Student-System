@@ -1,0 +1,28 @@
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+    <session-factory>
+        <!-- DataSource -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/postgres</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">postgres</property>
+
+        <!-- Dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+        <!-- Echo all executed statements -->
+        <property name="hibernate.show_sql">true</property>
+
+        <!-- Drop and re-create the database schema on startup -->
+        <property name="hibernate.hbm2ddl.auto">create-drop</property>
+
+        <!-- Names the annotated entity class -->
+        <mapping class="com.student.system.model.Student"/>
+        <mapping class="com.student.system.model.Teacher"/>
+        <mapping class="com.student.system.model.Quiz"/>
+        <mapping class="com.student.system.model.Course"/>
+    </session-factory>
+
+</hibernate-configuration>
