@@ -159,9 +159,3 @@ VALUES (1, 1),
        (18, 18),
        (19, 19),
        (20, 20);
-
--- get all teacher courses
-SELECT course.course_id, course.title, course.description, course.start_date, course.end_date
-FROM course
-         JOIN teacher_course ON course.course_id = teacher_course.course_id
-WHERE teacher_course.teacher_id = 1;

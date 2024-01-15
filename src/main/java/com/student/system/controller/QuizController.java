@@ -37,6 +37,11 @@ public class QuizController {
         return quizService.allQuizzes();
     }
 
+    @GetMapping("quizzes4Course/{courseId}")
+    @ResponseStatus(FOUND)
+    public List<Object[]> allCourseQuizzes(@PathVariable @Valid Long courseId) {
+        return quizService.allCourseQuizzes(courseId);
+    }
     @PutMapping("update")
     @ResponseStatus(ACCEPTED)
     public Quiz updateQuiz(@RequestBody @Valid QuizDto quizDto) {

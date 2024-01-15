@@ -21,6 +21,5 @@ public class Teacher {
     private String email;
     private LocalDate dateOfBirth;
     private LocalDate hireDate;
-    @ManyToMany(mappedBy = "teachers")
-    private Set<Course> courses;
+
 }
