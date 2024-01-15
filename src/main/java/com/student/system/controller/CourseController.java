@@ -2,10 +2,8 @@ package com.student.system.controller;
 
 import com.student.system.dto.CourseDto;
 import com.student.system.model.Course;
-import com.student.system.repository.CourseRepository;
 import com.student.system.service.CourseService;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import jakarta.persistence.Query;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
@@ -20,6 +18,7 @@ import static org.springframework.http.HttpStatus.*;
 @AllArgsConstructor
 public class CourseController {
     private final CourseService courseService;
+
     @PostMapping("create")
     @ResponseStatus(CREATED)
     public Course addCourse(@RequestBody @Valid CourseDto courseDto) {
@@ -37,10 +36,12 @@ public class CourseController {
     public Course findCourse(@PathVariable @Valid Long courseId) {
         return courseService.findCourse(courseId);
     }
+
     @GetMapping("all4Teacher/{teacherId}")
-    public List<Object[]> allTeacherCourses(@PathVariable @Valid Long teacherId){
+    public List<Object[]> allTeacherCourses(@PathVariable @Valid Long teacherId) {
         return courseService.allTeacherCourses(teacherId);
     }
+
     @GetMapping("all")
     @ResponseStatus(FOUND)
     public List<Course> allCourses() {
