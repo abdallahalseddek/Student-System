@@ -1,9 +1,7 @@
 package com.student.system.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.student.system.security.entity.User;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -23,5 +21,7 @@ public class Teacher {
     private String email;
     private LocalDate dateOfBirth;
     private LocalDate hireDate;
-
+    @OneToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 }
